@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item android:title="Search"
+        android:id="@+id/mysearch"
+        android:iconTint="@color/white"
+        android:icon="@drawable/search"
+        android:tooltipText="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+
+        />
+
+
+    <item android:title="Setting"
+        android:id="@+id/mysetting"
+        android:iconTint="@color/white"
+        android:icon="@drawable/mysetting"
+        android:tooltipText="Search"
+        app:showAsAction="ifRoom|collapseActionView">
+
+<!--        <menu>-->
+<!--        <item-->
+<!--            android:id="@+id/aboutus"-->
+<!--            android:icon="@drawable/aboutus"-->
+<!--            android:title="ABOUT US"-->
+<!--            android:iconTint="@color/black"-->
+<!--            />-->
+<!--        </menu>-->
+    </item>
+
+
+
+    <item android:title="Main Menu:"
+        android:iconTint="@color/white"
+        android:icon="@drawable/mymenu"
+        android:tooltipText="Menu List Are Here"
+        app:showAsAction="always">
+
+   <menu>
+    <item
+        android:id="@+id/delete_completed"
+        android:icon="@drawable/delete_complete"
+        android:title="DELETE COMPLETED TASK"
+        android:iconTint="@color/black"
+      />
+
+        <item
+            android:id="@+id/menu_delete_all"
+            android:title="DELETE All"
+            android:icon="@drawable/delete_all"
+            android:iconTint="@color/black"
+
+             />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="LOGOUT"
+        android:icon="@drawable/logout"
+        android:iconTint="@color/black"
+      />
+
+   </menu>
+    </item>
+</menu>

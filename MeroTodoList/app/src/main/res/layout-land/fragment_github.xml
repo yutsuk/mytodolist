@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GithubFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gitimg"
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/github" />
+
+
+        <Button
+            android:id="@+id/btnGit"
+            android:layout_width="206dp"
+            android:layout_height="74dp"
+            android:layout_below="@id/gitimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="GITHUB LINK"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

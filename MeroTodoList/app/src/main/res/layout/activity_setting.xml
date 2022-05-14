@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/mycontact"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_marginTop="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        app:lottie_rawRes="@raw/contactus" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabBar"
+        style="@style/TabLayoutTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mycontact"
+        android:layout_marginTop="0dp"
+        android:background="@color/teal_700"
+        app:tabSelectedTextColor="@color/fab_background"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAboutus"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="@string/aboutus" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGithub"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/github" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toast" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabBar" />
+</RelativeLayout>

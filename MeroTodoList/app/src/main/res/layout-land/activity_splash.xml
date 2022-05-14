@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context=".SplashActivity" >
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bangers"
+        android:text="@string/splash"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="bold"></TextView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieimg"
+        android:layout_width="match_parent"
+        android:layout_height="442dp"
+        android:layout_below="@id/mytext"
+        android:layout_marginTop="-50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        app:lottie_rawRes="@raw/welcome" />
+
+    <TextView
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/lottieimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-48dp"
+        android:text="Welcome to Utsuk's ToDo App."
+
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+</RelativeLayout>
